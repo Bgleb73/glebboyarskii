@@ -3,14 +3,10 @@ import * as Component from "./quartz/components"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
-  head: Component.Head(),
-  header: [],
-  afterBody: [
-    // Яндекс.Метрика - основной скрипт
-    Component.Script({
-      src: "https://mc.yandex.ru/metrika/tag.js",
-      loadStrategy: "afterDOMReady",
-      onLoad: `
+  head: Component.Head({
+    html: `
+      <!-- Yandex.Metrika counter -->
+      <script>
         (function(m,e,t,r,i,k,a){
           m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
           m[i].l=1*new Date();
@@ -24,20 +20,17 @@ export const sharedPageComponents: SharedLayout = {
           accurateTrackBounce:true,
           webvisor:true
         });
-      `,
-    }),
-    
-    // Яндекс.Метрика - noscript часть
-    Component.RawHtml({
-      html: `
-        <noscript>
-          <div>
-            <img src="https://mc.yandex.ru/watch/103367752" style="position:absolute; left:-9999px;" alt="" />
-          </div>
-        </noscript>
-      `,
-    }),
-  ],
+      </script>
+      <noscript>
+        <div>
+          <img src="https://mc.yandex.ru/watch/103367752" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+      </noscript>
+      <!-- /Yandex.Metrika counter -->
+    `
+  }),
+  header: [],
+  afterBody: [], // Оставлено пустым, так как метрика теперь в head
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
@@ -78,7 +71,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
 }
 
-// components for pages that display lists of pages  (e.g. tags or folders)
+// components for pages that display lists of pages (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
