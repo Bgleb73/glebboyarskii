@@ -5,7 +5,7 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody:   afterBody: [
+  afterBody: [
     // Яндекс.Метрика - основной скрипт
     Component.Script({
       src: "https://mc.yandex.ru/metrika/tag.js",
