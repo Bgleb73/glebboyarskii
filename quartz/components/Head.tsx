@@ -38,7 +38,7 @@ export default (() => {
 
     return (
       <head>
-        <title>Глеб Боярский - Цифровой сад по Веб-Аналитике, Трафику, Управлению проектами и ведению личной базы знаний</title>
+        <title>{Title}</title>
         <meta name="yandex-verification" content="f1f8ad8b86125a17" />
         <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
