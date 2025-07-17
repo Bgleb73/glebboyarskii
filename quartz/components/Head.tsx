@@ -38,7 +38,8 @@ export default (() => {
 
     return (
       <head>
-        <title>{title}</title>
+        <title>Глеб Боярский - Цифровой сад по Веб-Аналитике, Трафику, Управлению проектами и ведению личной базы знаний</title>
+        <meta name="yandex-verification" content="f1f8ad8b86125a17" />
         <meta charSet="utf-8" />
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
           <>
