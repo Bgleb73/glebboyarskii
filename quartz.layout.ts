@@ -5,7 +5,39 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody:   afterBody: [
+    // Яндекс.Метрика - основной скрипт
+    Component.Script({
+      src: "https://mc.yandex.ru/metrika/tag.js",
+      loadStrategy: "afterDOMReady",
+      onLoad: `
+        (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(103367752, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+        });
+      `,
+    }),
+    
+    // Яндекс.Метрика - noscript часть
+    Component.RawHtml({
+      html: `
+        <noscript>
+          <div>
+            <img src="https://mc.yandex.ru/watch/103367752" style="position:absolute; left:-9999px;" alt="" />
+          </div>
+        </noscript>
+      `,
+    }),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
