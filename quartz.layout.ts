@@ -1,14 +1,14 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg";
 import * as Component from "./quartz/components";
-import { YandexMetrika } from "./quartz/components/Analytics"; // импорт вашего компонента с метрикой
+import { YandexMetrika } from "./quartz/components/Analytics"; // предположим, вы создали здесь метрику
 
 export const sharedPageComponents: SharedLayout = {
-  head: (
-    <>
-      {Component.Head()}
-      <YandexMetrika />
-    </>
-  ),
+  head: Component.Flex({
+    components: [
+      Component.Head(),
+      YandexMetrika(),
+    ],
+  }),
   header: [],
   afterBody: [],
   footer: Component.Footer({
