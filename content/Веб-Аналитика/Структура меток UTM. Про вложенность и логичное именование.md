@@ -40,3 +40,12 @@ https://site.com?utm_source=yandex&utm_medium=organic&utm_campaign=yandex-busine
 
 Хорошо если вы используете динамическую UTM разметку, когда данные о рекламных кампаниях платформы передаются автоматически в метку из рекламной платформы, такое возможно в Я.Директе, ВК и других крупных сетках. 
 
+---
+
+Боярский Глеб Юрьевич 
+[@GlebBoyarskii](https://t.me/GlebBoyarskii) — Telegram | [VK](https://vk.com/gleb_boyarsky)
+
+**Обо мне:**  
+Настройка Яндекс Директ, Таргет, Google (Yandex) Tag Manager, разработка Power BI и DataLens дашбордов, глубокая аналитика рекламных систем, комплексная веб-аналитика и performance-маркетинг.
+
+---

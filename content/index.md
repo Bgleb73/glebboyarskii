@@ -15,5 +15,12 @@ title: Веб-Аналитика, Perfomance Маркетинг, Яндекс Д
 
 ## Мои контакты 
 
-- https://vk.com/gleb_boyarsky - ВК
-- @GlebBoyarskii - Телеграм
+---
+
+Боярский Глеб Юрьевич 
+[@GlebBoyarskii](https://t.me/GlebBoyarskii) — Telegram | [VK](https://vk.com/gleb_boyarsky)
+
+**Обо мне:**  
+Настройка Яндекс Директ, Таргет, Google (Yandex) Tag Manager, разработка Power BI и DataLens дашбордов, глубокая аналитика рекламных систем, комплексная веб-аналитика и performance-маркетинг.
+
+---
