@@ -51,6 +51,8 @@ const config: QuartzConfig = {
           textHighlight: "#b3aa0288",
         },
       },
+      // ↓↓↓ ДОБАВЬТЕ ЭТУ СТРОЧКУ ДЛЯ АВАТАРКИ ↓↓↓
+      avatar: 'IMG_9731.jpg', // или ваше название файла
     },
   },
   plugins: {
